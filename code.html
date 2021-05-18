@@ -12,7 +12,7 @@
 <script type="text/javascript">
     const header = document.querySelector('header');
     const section = document.querySelector('section');
-    var requestURL = 'http://api.openweathermap.org/data/2.5/weather?lat=47&lon=32&appid=8dc524c5096d6aaf7f08cdf6534ff9c4';
+    var requestURL = 'http://api.openweathermap.org/data/2.5/weather?lat=47&lon=32&lang=ua&appid=8dc524c5096d6aaf7f08cdf6534ff9c4';
     fetch(requestURL).then(d => {return d.json()}).then(r => {showWeather(r)})
     function showWeather(jsonObj) {
         var sHead = `${jsonObj.name}s weather`;
